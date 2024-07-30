@@ -11,4 +11,6 @@ app.put('/', (req, res) => res.send('Got a PUT request'))
 
 app.delete('/', (req, res) => res.send('Got a DELETE request'))
 
-app.listen(3000)
+app.use('/users', require('./src/controllers/users'))
+
+app.listen(3000, () => console.log('App listening on port 3000!'))
