@@ -39,9 +39,20 @@ const getCities = (countryId) => {
     });
 }
 
-getCountries().then( (data) => {
-    const countryId = data[0].id;
-        getCities(countryId).then( (city) => {
-            console.log(city);
-        })
-});
+// getCountries().then( (data) => {
+//     const countryId = data[0].id;
+//         getCities(countryId).then( (city) => {
+//             console.log(city);
+//         })
+// });
+
+
+const flow = async() => {
+    const countries = await getCountries();
+
+    const cities = await getCities(countries[0].id);
+
+    console.log(cities);
+}
+
+flow();
