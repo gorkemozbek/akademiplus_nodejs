@@ -1,11 +1,12 @@
-function add(a, b) {
-    return a + b;
+class Person {
+    constructor(name) {
+        this.name = name;
+    }
+    
+    greet() {
+        console.log(`Hello ${this.name}`);
+    }
 }
 
-const add = () => {
-    return a + b;
-}
-
-
-const add = (a, b) => a + b;
-console.log(add(1, 2)); // 3
+let john = new Person("John");
+john.greet(); // Hello John
