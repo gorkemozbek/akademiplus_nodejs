@@ -2,4 +2,5 @@
 
 # npm init -y
 
-# npm express
+# npm i express
+# npm i dotenv
