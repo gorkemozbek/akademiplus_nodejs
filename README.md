@@ -19,3 +19,6 @@
 # npx sequelize-cli model:generate --name UserRole --attributes userId:integer,roleId:integer
 
 # npx sequelize-cli seed:generate --name  insert-admin-user 
+
+
+# npm i express-validator
