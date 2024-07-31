@@ -1,8 +1,8 @@
 const { User } = require('../models');
 
 class UserService {
-    getAllUsers() {
-        const users = User.findAll(
+    async getAllUsers() {
+        const users = await User.findAll(
             {
                 attributes: ['username', 'email']
             }
@@ -10,6 +10,12 @@ class UserService {
 
         return users;
     }
+
+    async addUser(user) {
+        await User.create(user);
+        return "User added successfully";
+    }
+
 }
 
 module.exports = UserService;

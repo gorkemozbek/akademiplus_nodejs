@@ -12,8 +12,9 @@ router.get('/', async (req,res) => {
     res.send(result)
 })
 
-router.post('/', (req,res) => {
-    res.send(`Create new user with name ${req.body.name} surname ${req.body.surname}` )
+router.post('/', async (req,res) => {
+    const result = await new UserService().addUser(req.body);
+    res.send(result);
 })
 
 router.put('/', (req,res) => {
