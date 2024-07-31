@@ -17,3 +17,5 @@
 # npx sequelize-cli model:generate --name Permission --attributes name:string,code:string
 # npx sequelize-cli model:generate --name RolePermission --attributes roleId:integer,permissionId:integer
 # npx sequelize-cli model:generate --name UserRole --attributes userId:integer,roleId:integer
+
+# npx sequelize-cli seed:generate --name  insert-admin-user 
