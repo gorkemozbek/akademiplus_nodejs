@@ -22,3 +22,20 @@
 
 
 # npm i express-validator
+
+# npm i jsonwebtoken
+
+# node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+
+
+# INSERT INTO `mysql-node`.`Permissions` (`id`, `name`, `code`, `createdAt`, `updatedAt`) VALUES (1, 'READ', 'READ', now(), now());
+# INSERT INTO `mysql-node`.`Permissions` (`id`, `name`, `code`, `createdAt`, `updatedAt`) VALUES (2, 'CREATE', 'CREATE', now(), now());
+# INSERT INTO `mysql-node`.`Permissions` (`id`, `name`, `code`, `createdAt`, `updatedAt`) VALUES (3, 'UPDATE', 'UPDATE', now(), now());
+# INSERT INTO `mysql-node`.`Permissions` (`id`, `name`, `code`, `createdAt`, `updatedAt`) VALUES (4, 'DELETE', 'DELETE', now(), now());
+
+# INSERT INTO `mysql-node`.`RolePermissions` (`roleId`, `permissionId`, `createdAt`, `updatedAt`) VALUES (1, 1, now(), now());
+# INSERT INTO `mysql-node`.`RolePermissions` (`roleId`, `permissionId`, `createdAt`, `updatedAt`) VALUES (1, 2, now(), now());
+# INSERT INTO `mysql-node`.`RolePermissions` (`roleId`, `permissionId`, `createdAt`, `updatedAt`) VALUES (1, 3, now(), now());
+# INSERT INTO `mysql-node`.`RolePermissions` (`roleId`, `permissionId`, `createdAt`, `updatedAt`) VALUES (1, 4, now(), now());
+
+# npm i express-async-errors

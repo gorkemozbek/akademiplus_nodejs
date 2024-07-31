@@ -40,4 +40,12 @@ Object.keys(db).forEach(modelName => {
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
+db.UserRole.hasMany(db.RolePermission, { foreignKey: 'roleId' });
+db.RolePermission.belongsTo(db.UserRole, { foreignKey: 'roleId' });
+
+
+db.Permission.hasMany(db.RolePermission, { foreignKey: 'permissionId' });
+db.RolePermission.belongsTo(db.Permission, { foreignKey: 'permissionId' });
+
+
 module.exports = db;

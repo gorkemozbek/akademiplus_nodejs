@@ -28,6 +28,11 @@ router.post('/', [
     res.send(result);
 })
 
+router.post('/login', async (req,res) => {
+    const result = await new UserService().login(req.body);
+    res.send(result);
+})
+
 router.put('/', (req,res) => {
     res.send(`Update the user with name ${req.body.name} surname ${req.body.surname}` )
 })
