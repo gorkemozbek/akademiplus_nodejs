@@ -1,13 +1,16 @@
 const express = require('express')
 const router = express.Router()
 const BookService = require('../services/bookService')
+const auth = require('../helpers/auth')
+
+// router.use(auth('READ'));
 
 router.get('/:id', async (req, res) => {
     const result = await new BookService().getBook(req.params.id);
     res.send(result);
 });
 
-router.get('/', async (req,res) => {
+router.get('/', auth('READ'), async (req,res) => {
     const result = await new BookService().getBooks();
     res.send(result);
 });
