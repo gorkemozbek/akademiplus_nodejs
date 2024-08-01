@@ -42,3 +42,8 @@
 
 
 # npx sequelize-cli model:generate --name Book --attributes title:string,author:string,publisher:string,publicationDate:date,numberOfPages:integer
+
+
+
+
+# npm i --save-dev mocha assert sinon
