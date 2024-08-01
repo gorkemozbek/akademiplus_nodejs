@@ -39,3 +39,6 @@
 # INSERT INTO `mysql-node`.`RolePermissions` (`roleId`, `permissionId`, `createdAt`, `updatedAt`) VALUES (1, 4, now(), now());
 
 # npm i express-async-errors
+
+
+# npx sequelize-cli model:generate --name Book --attributes title:string,author:string,publisher:string,publicationDate:date,numberOfPages:integer

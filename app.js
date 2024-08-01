@@ -23,6 +23,7 @@ app.get('/', function (req, res) {
 })
 
 app.use('/users', require('./src/controllers/users'))
+app.use('/books', require('./src/controllers/books'))
 
 database.sequelize.authenticate().then(() => {
     console.log('Connection has been established successfully.');
