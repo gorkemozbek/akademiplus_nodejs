@@ -9,8 +9,8 @@
 # .sequelizec düzenledikten sonra npm i --save-dev sequelize-cli
 # npx sequelize-cli model:generate --name User --attributes username:string,email:string,password:string
 
-# npx sequelize-cli:create
-# npx sequelize-cli:migrate
+# npx sequelize-cli db:create
+# npx sequelize-cli db:migrate
 
 
 # npx sequelize-cli model:generate --name Role --attributes name:string
@@ -20,6 +20,7 @@
 
 # npx sequelize-cli seed:generate --name  insert-admin-user 
 
+# npx sequelize-cli db:seed:all
 
 # npm i express-validator
 
